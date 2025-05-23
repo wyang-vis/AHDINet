@@ -147,7 +147,7 @@ class Restoration(nn.Module):
 
         self.decoder_img = Decoder(self.channels)
         self.decoder_event = Decoder(self.channels)
-        # self.weight_fusion=Weight_Fusion(self.channels[0])
+        self.weight_fusion=Weight_Fusion(self.channels[0])
 
 
         self.out = nn.Conv2d(self.channels[0], outChannels, 3, stride=1, padding=1)
@@ -210,8 +210,7 @@ class Restoration(nn.Module):
 
         de_img=self.decoder_img(img_encoder_list)
         de_event=self.decoder_event(event_encoder_list)
-        # de_fuse=self.weight_fusion(de_img,de_event)
-        de_fuse=de_img+de_event
+        de_fuse=self.weight_fusion(de_img,de_event)
         out=self.out(de_fuse)
 
         out=out+input_img
