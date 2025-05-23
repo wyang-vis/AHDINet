@@ -3,13 +3,13 @@ Asymmetric Hierarchical Difference-aware Interaction Network for Event-guided Mo
 
 # Installation
 
-The model is built in PyTorch 1.8.0 and tested on Ubuntu 16.04 environment (Python3.7, CUDA9.0, cuDNN7.5).
+The model is built in PyTorch 2.0.1 and tested on Ubuntu 20.04.6 environment.
 
 For installing, follow these instructions
 
-    conda create -n pytorch1 python=3.7
-    conda activate pytorch1
-    conda install pytorch=1.8 torchvision=0.3 cudatoolkit=9.0 -c pytorch
+    conda create -n pytorch-2.0 
+    conda activate pytorch-2.0
+    conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.8 -c pytorch -c nvidia
     pip install matplotlib scikit-image opencv-python yacs joblib natsort h5py tqdm
 
 Install warmup scheduler
