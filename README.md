@@ -25,11 +25,11 @@ Install warmup scheduler
 
 ## Evaluation
 - Download the [GoPro events test dataset](https://pan.baidu.com/s/1UKV-sPGo9mRf7XJjZDoF7Q) (code: kmaz) to ./Datasets
-- Download the  [pretrained model](https://pan.baidu.com/s/1qvTokB8mcAA8cj56F1rE4w) (code: daye) to ./checkpoints/models/AHDINet
+- Download the  [pretrained model](https://pan.baidu.com/s/1tthPWHgQlU9UyXut6vCeEg) (code: cam9) to ./checkpoints/models/AHDINet
 - Test the model with default arguments by running
 
   python main_test.py
-  
+
 ## Citations
     @inproceedings{yang2025asymmetric,
       title={Asymmetric Hierarchical Difference-aware Interaction Network for Event-guided Motion Deblurring},
